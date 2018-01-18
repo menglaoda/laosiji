@@ -1,0 +1,304 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f3f3f3;
+}
+/*头部*/
+.header{
+	width: 1230px;
+	height: 32px;
+	margin: 0 auto;
+	position: relative;
+	font-size: 12px;
+	color: #046cbb;
+}
+.header_1{
+	position: absolute;
+	left: 0px;
+	top: 9px;
+}
+.header_1 li{
+	list-style: none;
+	height: 13px;
+	line-height: 13px;
+	border-right:1px solid #046cbb ;
+	float: left;
+	margin-left: 10px;
+	padding-right: 10px;
+}
+.header_1 .lastli{
+	border: none;
+}
+.header_2{
+	position: absolute;
+	left: 830px;
+}
+.header_3{
+	width: 190px;
+	height: 22px;
+	background: #f9f9f9;
+	border: solid 1px #084e84;
+	position: absolute;
+	top: 4px;
+	right: 0px;
+}
+.header_3 input{
+	text-indent: 14px;
+	border: none;
+	background: #f9f9f9;
+	margin-top: 3px;
+	outline: medium;
+}
+.header_3 img{
+	vertical-align: middle;
+}
+/*logo*/
+.logo{
+	height: 228px;
+	background: #003e6d;
+}
+.logo img{
+	margin: 0 auto;
+	position: relative;
+	top: -1px;
+	display: block;
+}
+.logo div{
+	height: 45px;
+	margin-top: 38px;
+	background: #0084d7;
+}
+/*主要内容*/
+.content{
+	width: 1230px;
+	height: 660px;
+	margin: 0 auto;
+	background: #ffffff;
+	margin-top: -82px;
+	position: relative;
+}
+.nav{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+.nav a{
+	list-style: none;
+	float: left;
+	width: 119px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	background: #ebeceb;
+	margin-right: 1px;
+	color: black;
+	text-decoration: none;
+}
+.nav a:hover{
+	background: #084E84;
+	color: white;
+}
+.lunbo{
+	width: 808px;
+	height: 307px;
+	position: absolute;
+	left: 15px;
+	top: 76px;
+}
+.lunbo img{
+	width: 808px;
+	height: 307px;
+}
+/*通知*/
+.tongzhi{
+	width: 380px;
+	height: 307px;
+	position: absolute;
+	right: 15px;
+	top: 76px;
+}
+.tongzhi div{
+	height: 34px;
+	background: #003e6d;
+}
+.tongzhi span{
+	width: 106px;
+	height: 34px;
+	color: white;
+	float: left;
+	line-height: 34px;
+	text-align: center;
+}
+.tongzhi .span1{
+	background: #1970b1;
+}
+.list1{
+	position: absolute;
+	left: 20px;
+	top: 34px;
+	width: 335px;
+}
+.list1 li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	margin-top: 0px;
+}
+.list2{
+	position: absolute;
+	right: 0px;
+	top: 34px;
+}
+.list2 li{
+	height: 30px;
+	line-height: 30px;
+	list-style: none;
+	font-size: 14px;
+	margin-top: 0px;
+}
+/*新闻*/
+.xinwen{
+	position: absolute;
+	left: 15px;
+	top: 398px;
+}
+.xinwen .span2{
+	width: 60px;
+	margin-left: 210px;
+}
+.meiti{
+	width: 418px;
+	left: 405px;
+}
+.meiti .span2{
+	margin-left: 244px;
+}
+.daohang{
+	position: absolute;
+	left: 838px;
+}
+.daohang .span1{
+	width: 100%;
+	background: blueviolet;
+	text-indent: -280px;
+}
+.daohang ul{
+	width: 400px;
+	position: absolute;
+	left: -10px;
+}
+.daohang li{
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: palegreen;
+	float: left;
+	list-style: none;
+}
+.oimg{
+	overflow: hidden;
+	width: 1230px;
+	height: 104px;
+	margin: 14px auto;
+	background: #ffffff;
+	position: relative;
+}
+.img_box{
+	margin-top:18px ;
+	margin-left: 14px;
+}
+.oimg span{
+	width: 32px;
+	height: 60px;
+	display: block;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	position: absolute;
+	right: 100px;
+	top: 15px;
+	background: #003E6D;
+}
+.oimg1{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+.lianjie{
+	height: 58px;
+	width: 1230px;
+	margin: 0 auto;
+	background: #ffffff;
+	margin-bottom: 14px;
+	position: relative;
+}
+.lianjie div{
+	position: absolute;
+	top: 17px;
+	left: 102px;
+}
+.lianjie a{
+	width: 82px;
+	height: 32px;
+	display: block;
+	background: #003E6D;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 32px;
+	position: absolute;
+	top: 13px;
+	left: 15px;
+	font-size: 14px;
+}
+.lianjie select{
+	width: 150px;
+	height: 24px;
+}
+.a{
+	width: 100%;
+	height: 10px;
+	background: #0084d8;
+}
+.b{
+	overflow: hidden;
+	height: 124px;
+	background: #003e6d;
+}
+.b ul{
+	width: 1230px;
+	margin: 0 auto;
+	margin-top: 27px;
+}
+.b li{
+	float: left;
+	list-style: none;
+	margin-right: 70px;
+}
+.footer{
+	height: 230px;
+	text-align: center;
+}
+.footer p{
+	margin-top: 14px;
+	font-size: 14px;
+}
+.footer img{
+	margin: 0 auto;
+	display: block;
+	margin-top: 26px;
+}
+.footer .p1{
+	margin-top: -6px;
+}
+.footer .m{
+	display: inline;
+	position: relative;
+	top: 5px;
+}
