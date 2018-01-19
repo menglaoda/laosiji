@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			canvas{
+				border: solid 1px black;
+			}
+		</style>
+		<script>
+		onload =function(){
+			var canvas = document.querySelector("canvas");
+			canvas.width = 600;
+			canvas.height = 600;
+			var ctx = canvas.getContext("2d");
+			//蓝头
+			    ctx.beginPath();
+				ctx.arc(150,150,87,0,2*Math.PI,false);
+				ctx.strokeStyle = "black";
+				ctx.fillStyle = "#8CCDE2";
+				ctx.stroke();
+				ctx.fill();
+			//白头	
+				ctx.beginPath();
+				ctx.arc(150,170,70,0,2*Math.PI,false);
+				ctx.strokeStyle = "black";
+				ctx.fillStyle = "white";
+				ctx.stroke();
+				ctx.fill();
+				 //左眼睛
+				 ctx.beginPath(); 
+                 ctx.ellipse(130, 110, 20, 15, -1.5, 0, Math.PI, true);  
+                 ctx.stroke(); 
+                 ctx.fillStyle = "white";
+                 ctx.fill();
+                 ctx.beginPath(); 
+                 ctx.ellipse(130, 110, 20, 15, 1.6, 0, Math.PI, true);  
+                 ctx.stroke();
+                 ctx.fillStyle = "white";
+                 ctx.fill();
+                 
+                 
+                 //眼睛左线
+            ctx.beginPath();
+            ctx.moveTo(122,100);
+            ctx.lineTo(140,110);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            //眼睛线
+            ctx.beginPath();
+            ctx.moveTo(122,110);
+            ctx.lineTo(140,110);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            //眼睛线
+            ctx.beginPath();
+            ctx.moveTo(122,120);
+            ctx.lineTo(140,110);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            
+            //右眼睛
+				 ctx.beginPath(); 
+                 ctx.ellipse(172, 110, 20, 15, -1.5, 0, Math.PI, true);  
+                 ctx.stroke(); 
+                 ctx.fillStyle = "white";
+                 ctx.fill();
+                 ctx.beginPath(); 
+                 ctx.ellipse(172, 110, 20, 15, 1.6, 0, Math.PI, true);  
+                 ctx.stroke();
+                 ctx.fillStyle = "white";
+                 ctx.fill();
+                 //黑眼珠	
+				ctx.beginPath();
+				ctx.arc(170,110,10,0,2*Math.PI,false);
+				ctx.fillStyle = "black";
+				ctx.fill();
+				//白眼珠	
+				ctx.beginPath();
+				ctx.arc(172,112,3,0,2*Math.PI,false);
+				ctx.fillStyle = "white";
+				ctx.fill();
+            //红鼻子	
+				ctx.beginPath();
+				ctx.arc(150,135,10,0,2*Math.PI,false);
+				ctx.fillStyle = "red";
+				ctx.fill();
+            //竖线
+            ctx.beginPath();
+            ctx.moveTo(150,145);
+            ctx.lineTo(150,185);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            //左线
+            ctx.beginPath();
+            ctx.moveTo(85,130);
+            ctx.lineTo(135,145);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            //线
+            ctx.beginPath();
+            ctx.moveTo(80,150);
+            ctx.lineTo(135,150);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            //线
+            ctx.beginPath();
+            ctx.moveTo(85,170);
+            ctx.lineTo(135,155);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            
+             //右线
+            ctx.beginPath();
+            ctx.moveTo(215,130);
+            ctx.lineTo(165,145);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            //线
+            ctx.beginPath();
+            ctx.moveTo(220,150);
+            ctx.lineTo(165,150);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            //线
+            ctx.beginPath();
+            ctx.moveTo(215,170);
+            ctx.lineTo(165,155);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            //嘴巴横线
+            ctx.beginPath();
+            ctx.moveTo(90,185);
+            ctx.lineTo(210,185);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+            //左弧
+             ctx.moveTo(90,175);
+             ctx.quadraticCurveTo(80,180,90,185);
+             ctx.stroke();
+             //右弧
+             ctx.moveTo(210,175);
+             ctx.quadraticCurveTo(220,180,210,185);
+             ctx.stroke();
+             //嘴巴
+             ctx.beginPath();
+             ctx.moveTo(105,186);
+             ctx.quadraticCurveTo(150,250,195,186);
+             ctx.stroke();
+             ctx.fillStyle = "#FABDC9";
+       		ctx.fill();
+     		
+            //身子
+             ctx.beginPath();
+            ctx.moveTo(105, 235);
+            ctx.quadraticCurveTo(50, 270, 31, 300);
+            ctx.quadraticCurveTo(80, 305, 95, 280);
+            ctx.quadraticCurveTo(85, 300, 100, 340);
+            ctx.quadraticCurveTo(160, 360, 200, 340);
+            ctx.quadraticCurveTo(220, 300, 210, 265);
+            ctx.quadraticCurveTo(260,230, 270, 200);
+            ctx.quadraticCurveTo(250, 200, 200, 235);
+            ctx.quadraticCurveTo(210, 235, 105, 235);
+            ctx.fillStyle = "#86CDE9";
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+            //白肚子
+			ctx.beginPath();
+			ctx.arc(150,280,45,0,2*Math.PI,false);
+			ctx.fillStyle = "white";
+            ctx.fill();
+             //领带
+             ctx.beginPath();
+            ctx.moveTo(200, 225);
+            ctx.quadraticCurveTo(150, 235, 100, 225);
+            ctx.quadraticCurveTo(90, 235, 100, 235);
+            ctx.quadraticCurveTo(150, 245, 200, 235);
+            ctx.quadraticCurveTo(210, 235, 200, 225);
+            ctx.fillStyle = "#FFFF00";
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+            //左手	
+			ctx.beginPath();
+			ctx.arc(40,295,10,0,2*Math.PI,false);
+			ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+            //右手	
+			ctx.beginPath();
+			ctx.arc(265,200,10,0,2*Math.PI,false);
+			ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+            //铃铛	
+			ctx.beginPath();
+			ctx.arc(150,245,9,0,2*Math.PI,false);
+			ctx.fillStyle = "#FFA200";
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+             //铃铛中间线
+            ctx.beginPath();
+            ctx.moveTo(141, 245);
+            ctx.quadraticCurveTo(150, 252, 159, 245);
+            ctx.stroke();
+            ctx.closePath();
+             //肚兜
+             ctx.beginPath();
+            ctx.moveTo(120, 270);
+            ctx.lineTo(180,270);
+            ctx.stroke();
+            ctx.closePath();
+            ctx.beginPath();
+			ctx.arc(150,270,30,0,1*Math.PI,false);
+            ctx.stroke();
+            ctx.closePath();
+            
+            //右脚
+             ctx.beginPath();
+            ctx.moveTo(150, 340);
+            ctx.quadraticCurveTo(145, 350, 150, 360);
+            ctx.quadraticCurveTo(180, 370, 200, 360);
+            ctx.quadraticCurveTo(205, 350, 200, 340);
+            ctx.quadraticCurveTo(180, 350, 150, 340);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+            //左脚
+             ctx.beginPath();
+            ctx.moveTo(100, 340);
+            ctx.quadraticCurveTo(95, 350, 100, 360);
+            ctx.quadraticCurveTo(130, 370, 150, 360);
+            ctx.quadraticCurveTo(155, 350, 150, 340);
+            ctx.quadraticCurveTo(130, 350, 100, 340);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+
+		}
+		
+		</script>
+	</head>
+	<body>
+		<canvas></canvas>
+	</body>
+</html>
