@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			canvas{
+				border: 1px solid black;
+			}
+		</style>
+		<script>
+			onload = function(){
+				var canvas = document.querySelector("canvas");
+				canvas.height = 600;
+				canvas.width = 600;
+				var ctx = canvas.getContext("2d");
+				//头
+				ctx.beginPath();
+				ctx.arc(300,200,100,0,2*Math.PI,false);
+				ctx.stroke();
+				ctx.fillStyle = "#86CDE9";
+				ctx.fill();
+				//脸
+				ctx.beginPath();
+				ctx.arc(300,220,90,0,2*Math.PI,false);
+				ctx.stroke();
+				ctx.fillStyle = "white";
+				ctx.fill();
+				//左眼
+				ctx.beginPath();
+				ctx.ellipse(400,135,20,15,0,0,Math.PI,false);
+				ctx.stroke();
+				//右眼
+				ctx.beginPath();
+				ctx.arc(450,145,20,0,2*Math.PI,false);
+				ctx.stroke();
+				//左眼所有物
+				//中
+				ctx.beginPath();
+				ctx.moveTo(390,144.5);
+				ctx.lineTo(415,144.5);
+				ctx.stroke();
+				//上
+				ctx.beginPath();
+//				ctx.rotate(20*Math.PI/180);
+				ctx.moveTo(415,-6);
+				ctx.lineTo(440,-6);
+				ctx.stroke();
+				//下
+				ctx.beginPath();
+//				ctx.rotate(-36*Math.PI/180);
+				ctx.moveTo(335,254);
+				ctx.lineTo(360,254);
+				ctx.stroke();
+				ctx.beginPath();
+				//右眼所有物
+				//眼珠
+				ctx.beginPath();
+				ctx.scale(1,1);
+				ctx.arc(400,300,10,0,2*Math.PI,false);
+				ctx.fillStyle = "black";
+				ctx.fill();
+			}
+		</script>
+	</head>
+	<body>
+		<canvas>柒头，尼个浏览器唔垫啊，用谷歌或者火狐啦！</canvas>
+	</body>
+</html>
